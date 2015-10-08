@@ -1,0 +1,166 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font: 13px Helvetica, Arial;
+      width: 100%;
+    }
+    
+    #chat{
+      float:left;
+      width:75%;
+      display: inline-block;
+    }
+    
+    #chat form {
+      overflow-y: scroll;
+      background: #000;
+      padding: 3px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    #chat form input {
+      border: 0;
+      padding: 10px;
+      width: 65%;
+      margin-right: .5%;
+    }
+    
+    #chat form button {
+      width: 9%;
+      background: rgb(130, 224, 255);
+      border: none;
+      padding: 10px;
+    }
+    
+    #messages {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #messages li {
+      padding: 5px 10px;
+      width:100%;
+    }
+    
+    .localMessages {
+      /*text-align: left;*/
+      background: #eee;
+    }
+    
+    .otherMessages{
+          /*text-align:right;*/
+          background:#88ccff;
+    }
+        
+    .center{
+          width:100%;
+          margin: 0 auto;
+    }
+    
+    #users{
+          overflow-y: scroll;
+          float: right;
+          border: 5px solid black;
+          width:25%;
+          display: inline-block;
+          background-color: cornflowerblue;
+          padding-bottom: 100%;
+    }
+    
+    h2{
+          text-align: center;
+          display: iinline-block;
+    }
+   
+    #active_users_list li{
+      list-style-type: none;
+      border: 0;
+      outline: 0;
+      background: none;
+      background-color: lightgrey;
+      padding: 5px 10px;
+      width:100%;
+      text-align: center;
+      font-size: larger;
+    }
+    
+    /* For later
+    #active_users_list li:hover{
+      background-color: grey;
+      width:100%;
+      text-align: center;
+      font-size: larger;
+    }
+    */
+    
+    
+    #inactive_users_list li{
+      list-style-type: none;
+      border: 0;
+      outline: 0;
+      background: none;
+      background-color: gray;
+      padding: 5px 10px;
+      width:100%;
+      text-align: center;
+      font-size: larger;
+    }
+    
+    #login_signup{
+      border-radius: 25px;
+      background-color: cornflowerblue;
+      width: 25%;
+      padding-top: 5%;
+    }
+   
+   #login{
+      width:300px;
+      height:300px;
+      text-align: center;
+                 
+   }
+   
+   #signup{
+      width:300px;
+      height:300px;
+      text-align: center;
+   }
+    
+    #login_signup input{
+      display: block;
+      margin: 0 auto;
+      border-radius: 25px;
+    }
+    
+    #login_signup button{
+          border-radius: 25px;
+          padding: 5px;
+    }
+    
+    #logout{
+          margin-top: 10px;
+                    border-radius: 25px;
+          padding: 5px;
+    }
+    
+    #typing_id{
+          bottom:41px;
+          position: fixed;
+    }
+    
+
+    
+    .vert-hor-center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    

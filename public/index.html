@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Local Chat</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="login_signup" class="vert-hor-center">
+      <h2>Chat</h2>
+      <div id="login" class="center">
+        <form>
+          Username:
+          </br>
+          <input id="login_name" type="text" name="username">
+          </br>
+          </br>
+          Password:
+          </br>
+          <input id="login_pass" type="password" name="password">
+          </br>
+          <p id="login_feedback" style="text-align: center; color: maroon"></p>
+          </br>
+          <button id="login_button">Login</button>
+          <button id="register_button">Register</button>
+        </form>
+      </div>
+
+      <div id="signup" class="center">
+        <form>
+          Username:
+          </br>
+          <input id="signup_name" type="text" name="username">
+          </br>
+          </br>
+          Password:
+          </br>
+          <input id="signup_pass" type="password" name="password">
+          </br>
+          </br>
+          <p id="signup_feedback" style="text-align: center; color: maroon"></p>
+          </br>
+          <button id="register_new_button" class="center">Register</button>
+          <button id="signup_back" class="center">Back</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="chat">
+      <ul id="messages"></ul>
+            <p id="typing_id"></p>
+      <form id="chatform" action="">
+        <input id="m" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="users">
+    <h2>Online Users</h2>
+    <ul id="active_users_list"></ul>
+    <h2>Offline Users</h2>
+    <ul id="inactive_users_list"></ul>
+    <button id="logout" class="center">Log Out</button>
+  </div>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="scripts/socketcode.js"></script>
+  <script src="scripts/input.js"></script>
+</body>
+
+</html>
